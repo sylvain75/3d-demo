@@ -33,12 +33,12 @@
 </T.OrthographicCamera>
 
 <!-- Ambient light for ambience -->
-<T.AmbientLight color="#0000ff" intensity={10} />
+<T.AmbientLight color="#f44336" intensity={10} />
 
 <!-- Main light -->
-<T.PointLight intensity={2} position={[4, 2, 4]} color="#76aac8" />
+<T.PointLight intensity={2} position={[4, 2, 4]} color="#ffd966" />
 
 <!-- Ghost -->
 {#await useGltf('/assets/wine_bottle.glb') then wine}
-	<T is={wine.scene} position={[0, y, 0]} scale={0.8} />
+	<T is={wine.scene} position={[0, y, 0]} scale={2} />
 {/await}
